@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+}
+
+li{
+    padding-right:40px;
+    display:inline;
+}
+
+h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    
+    & a{
+        text-decoration: none;
+        transition: all 0.5s ease;
+        color: #fff;
+    }
+
+    & a:hover{
+        text-decoration: none;
+        color: #333333;
+    }
+}
+table{
+    width:100%;
+    table-layout: fixed;
+    & a{
+        text-decoration: none;
+        color: #fff; 
+    }
+    & a:hover{
+        font-weight: bold;
+        color: #333333;
+        transition: color 0.3s ease;
+    }
+}
+.tbl-header{
+    background-color: rgba(255,255,255,0.3);
+}
+.tbl-content{
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+.menu{
+    text-align: left; 
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1rem;
+
+    & a{
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;  
+    }
+
+    & a:hover{
+        color:#333333;
+        transition: all 0.3s ease;
+    }
+}
+
+.underline {
+    cursor: pointer;
+    padding: 2px 0;
+    position: relative;
+    width: fit-content;
+}
+
+.underline::after {
+    content: '';
+    background-color: #333333;
+    bottom: -2px;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    transition: width .3s ease;
+    width: 0;
+}
+
+.underline:hover::after {
+    left: 0;
+    width: 100%;
+}
+  
+  
+  
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+.table-gradient{
+    background: -webkit-linear-gradient(left, #cf65af, #d7dc79);
+    background: linear-gradient(to right, #cf65af, #d7dc79);
+    font-family: 'Roboto', sans-serif;
+}
+.body-solid{
+    background-color: #333333;
+}
+section{
+    margin: 50px;
+}
+    
+
+.btn {
+    margin-left: 50px;
+    margin-top:0px;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #333333;
+    color: #333333;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #333333;
+        color: #fff;  
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.btn-left {
+    width: 30%;
+    margin-top:0px;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #333333;
+    color: #333333;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #333333;
+        color: #fff;  
+    }
+}
+
+.btn-right {
+    margin-right: 30px;
+    width: 100%;
+    margin-right: 0;
+    margin-top:0px;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #944747;
+    color: #944747;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #944747;
+        color: #fff;  
+    }
+}
+
+.container {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.frame {
+    height: 70vw;
+    min-height: 700px;
+    width: 40vw;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(#cf65af,#d7dc79), no-repeat center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px (#cf65af);
+    border-radius: 10px;
+    box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.316);
+    overflow: hidden;
+    transition: all .5s ease;
+
+    & p{
+        padding-top: 15px;
+    }
+}
+
+.form-styling {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.2);
+    text-align: center;
+
+        &:focus {
+            outline: solid #333333;
+        }
+
+}
+  
+label {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 20px;
+
+    color: rgba(255,255,255,.7);
+    display: block;
+}
+
+.error{
+    width: 100%;
+    display: inline-block;
+    padding:5px;
+    background-color: rgb(251, 187, 187);
+    border-radius: 5px;
+    border: red 1px solid;
+    font-size: 0.9em;
+    color:red;
+}
